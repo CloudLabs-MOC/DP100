@@ -2,26 +2,18 @@
 
 In this lab, you will create the Azure Machine Learning workspace that you will use throughout the rest of this course.
 
-## Before You Start
-
-To complete the labs in this course, you will need an Azure subscription. If you do not already have one, you can sign up for a free trial at [https://azure.microsoft.com](https://azure.microsoft.com).
-
-If you are using an Azure Pass subscription, provided to you for this course, your account may not have been assigned to the subscription **Owner** role, which may be required for some operations in this course. To add your account to the **Owner** role:
-
-1. Sign into the [Azure portal](https://portal.azure.com) and view your **Subscriptions**.
-2. Select the subscription you created using an Azure pass (it will probably have a name similar to **Azure Pass - Sponsorship**).
-3. In the blade for your subscription, open the **My Permissions** page, and then click the link on it to view complete access details for the subscription.
-4. Under **Add role assignment**, click **Add**. Then select the following and click **Save**:
-    - **Role**: Owner
-    - **Assign access to**: Azure AD user, group, or service principal
-    - **Select**: The Microsoft account you used to sign into Azure.
-
 ## Task 1: Create an Azure ML Workspace
 
 As its name suggests, a workspace is a centralized place to manage all of the Azure ML assets you need to work on a machine learning project.
 
-1. In the [Azure portal](https://portal.azure.com), create a new **Machine Learning** resource, specifying a unique workspace name and creating a new resource group in the region nearest your location.
-2. When the workspace and its associated resources have been created, view the workspace in the portal.
+1. From the Azure portal, search for and select **Machine Learning**. 
+ 1. On the **Machine Learning** blade, click on **Create azure machine learning** to create a new machine learning workspace,
+1. On the **Create a machine learning workspace** blade, provide the following details and click on **Review + create** then **Create**. 
+     - **Subscription** : Select the subscription from the dropdown 
+     - **Resource group** : Select the existing resource group named dp-100-{UniqueId} 
+     - **Workspace name** : quick-starts-ws-{UniqueId} 
+     -  **Region** : Select the same region as your resource group 
+ 2. When the workspace and its associated resources have been created, view the workspace in the portal. 
 
 ## Task 2: Explore the Azure ML Studio Interface
 
@@ -38,11 +30,11 @@ One of the benefits of Azure Machine Learning is the ability to create cloud-bas
 
 1. In the Azure Machine Learning studio web interface for your workspace, view the **Compute** page. This is where you'll manage all the compute targets for your data science activities.
 2. On the **Compute Instances** tab, add a new compute instance with the following settings. You'll use this as a workstation from which to test your model:
-    - **Compute name**: *enter a unique name*
+    - **Compute name**: *enter name as notebook-{UniqueId}*
     - **Virtual Machine type**: CPU
     - **Virtual Machine size**: Standard_DS11_v2
 3. While the compute instance is being created, switch to the **Compute Clusters** tab, and add a new compute cluster with the following settings. You'll use this to train a machine learning model:
-    - **Compute name**: *enter a unique name*
+    - **Compute name**: *enter name as aml-cluster*
     - **Virtual Machine type**: CPU
     - **Virtual Machine priority**: Dedicated
     - **Virtual Machine size**: Standard_DS11_v2
