@@ -1,0 +1,14 @@
+[ {
+  "Name": "Creating a Training Pipeline with the Azure ML Designer",
+  "Language": "English",
+  "Files": [
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/https://github.com/CloudLabs-MOC/DP100/tree/prodlabdocs/Lab02A.md",
+      "Order": 1
+    },
+    {
+      "RawFilePath": "https://raw.githubusercontent.com/https://github.com/CloudLabs-MOC/DP100/tree/prodlabdocs/Lab02B.md",
+      "Order": 2
+    }
+  ]
+} ]

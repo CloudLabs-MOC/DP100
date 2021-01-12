@@ -2,10 +2,6 @@
 
 After you've created a pipeline, you can publish a REST endpoint through which the pipeline can be initiated. This enables you to run the pipeline on-demand or at scheduled times.
 
-## Before You Start
-
-Before you start this lab, ensure that you have completed [Lab 1A](Lab01A.md) and [Lab 1B](Lab01B.md), which include tasks to create the Azure Machine Learning workspace and other resources used in this lab; and [Lab 6A](Lab06A.md) in which you create the pipeline you will publish in this lab.
-
 ## Task 1: Publish a Pipeline
 
 In this task, you'll create a pipeline to train and register a model.
